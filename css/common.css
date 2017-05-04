@@ -72,12 +72,16 @@
   clear: both;
 }
 /*estilos de la primera seccion*/
+.ajustarCentro{
+  text-align: center;
+}
 .ajustar{
   margin-left: 27%;
   text-align: center;
 }
 .ajustarImagen{
-  margin-left: 35%;
+  margin-left: 38%;
+  padding-top: 10%;
 }
  .fondo{
    background-color: #96ddc7;
@@ -90,5 +94,16 @@
    padding-right:  10%;
    padding-left: 10%;
    padding-bottom: 5%;
-
  }
+
+ .ajustarAbout{
+   margin-bottom: 25%;
+ }
+ .borde{
+   border-bottom: 0;
+   border-left: 0;
+   border-right: 0;
+ }
+.bordeColor{
+  border-top: solid 	#A9A9A9;
+}

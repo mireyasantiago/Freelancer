@@ -101,3 +101,53 @@ color: white;
         color: #6fffd8;
         cursor: pointer;
 }
+
+.alinearIzq{
+float: right;
+}
+
+/* estilos de boton */
+.centrarBoton{
+  width: 200px;
+  margin: 0 auto;
+}
+/*estilos para el formulario*/
+
+.btn{
+  display: inline-block;
+  margin: 1em 0 0 0;
+}
+
+label{
+  display: block;
+  margin: .5em 0 0 0;
+}
+div {
+  margin: .4em 0;
+}
+div label {
+  width: 25%;
+  float: left;
+}
+
+.ajustarFormulario{
+  margin-left: 34%;
+}
+.bordeFormulario{
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+
+}
+.bordeMesaje{
+
+  border-left: 0;
+  border-right: 0;
+}
+.colorM{
+  border-top: solid 	#A9A9A9;
+  border-bottom: solid 	#A9A9A9;
+  border-width:  2px;
+
+}
