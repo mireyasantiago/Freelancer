@@ -45,7 +45,12 @@
 
  header {
    background-color: black;
+   position: fixed;
  }
+ .menu{
+  padding: 14px 70px;
+  overflow: auto;
+}
  header:hover {
    transform: scale();
  }

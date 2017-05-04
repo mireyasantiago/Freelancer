@@ -82,3 +82,13 @@
  .fondo{
    background-color: #96ddc7;
  }
+
+ .ajustarAbajo{
+   margin-top: 5%;
+ }
+ .espacioLado{
+   padding-right:  10%;
+   padding-left: 10%;
+   padding-bottom: 5%;
+
+ }
