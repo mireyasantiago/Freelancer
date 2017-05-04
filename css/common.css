@@ -1,3 +1,84 @@
 /*
  * Estilos reutilizables
  */
+
+
+ [class*="col-"]{
+  min-height: 7px;
+  padding: 12px;
+  float: left;
+}
+
+
+
+/*creamos las clases para las columnas*/
+.col-1{
+  /*se realiza la operacion (n/12)*100*/
+  width: 8.333%;
+}
+
+.col-2{
+  /*se realiza la operacion (n/12)*100*/
+  width: 16.666%;
+}
+.col-3{
+  /*se realiza la operacion (n/12)*100*/
+  width: 25%;
+}
+.col-4{
+  /*se realiza la operacion (n/12)*100*/
+  width: 33.33%;
+}
+.col-5{
+  /*se realiza la operacion (n/12)*100*/
+  width: 41.666%;
+}
+.col-6{
+  /*se realiza la operacion (n/12)*100*/
+  width: 50%;
+}.col-7{
+  /*se realiza la operacion (n/12)*100*/
+  width: 58.333%;
+}.col-8{
+  /*se realiza la operacion (n/12)*100*/
+  width: 66.666%;
+}.col-9{
+  /*se realiza la operacion (n/12)*100*/
+  width: 75%;
+}
+.col-10{
+  /*se realiza la operacion (n/12)*100*/
+  width: 83.333%;
+}
+.col-11{
+  /*se realiza la operacion (n/12)*100*/
+  width: 91.666%;
+}
+.col-12{
+  /*se realiza la operacion (n/12)*100*/
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row::before, .row:after{
+  content: "";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+/*estilos de la primera seccion*/
+.ajustar{
+  margin-left: 27%;
+  text-align: center;
+}
+.ajustarImagen{
+  margin-left: 35%;
+}
+ .fondo{
+   background-color: #96ddc7;
+ }
