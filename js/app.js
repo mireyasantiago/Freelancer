@@ -4,7 +4,7 @@
 var modal = document.getElementById("modalArea");
 var imagenModal = document.getElementById("modalImage");
 var boton = document.getElementById("close");
-var fotos = document.getElementsByClassName("fotito");
+var fotos = document.getElementsByClassName("foto");
 
 function mostrarModal(){
     console.log(modal);

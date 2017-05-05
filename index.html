@@ -12,12 +12,15 @@
 <!-- Escribe tu código aquí -->
 <!--estructura del menu -->
 		<header class="menu container">
-			<nav class="row">
+			<div class="row">
 				<h3 class="col-7 textoBlanco alinear ">START BOOTSTRAP</h3>
-				<a href="#" class="col-1 textoBlanco centrarT">PORTFOLIO</a>
-				<a href="#" class="col-1 textoBlanco centrarT">ABOUT</a>
-				<a href="#" class="col-1 textoBlanco">CONTACT</a>
-			</nav>
+				<nav class="col-4">
+					<a href="#" class="col-4  a textoBlanco centrarT">PORTFOLIO</a>
+					<a href="#" class="col-4 a textoBlanco centrarT">ABOUT</a>
+					<a href="#" class="col-4 a textoBlanco">CONTACT</a>
+				</nav>
+			</div>
+
 		</header>
 		<!--final del menu  -->
 		<!--comienza la primera seccion start  -->
@@ -29,33 +32,44 @@
 			<section class="row ">
 			<h1 class="col-12 ajustarCentro">START BOOTSTRAP</h1>
 			</section>
-			<section class="row ">
-			<h2 class="col-12 ajustarCentro">imagen con linea</h2>
+			<section class="col-12 ">
+			<img src="assets/images/estrellaBlanca.png" class="ajustarEstrella">
 			</section>
 			<section class="row ">
-			<h3 class="col-12 ajustarCentro">Web Developer-Graphic-artist User Experience Designer</h3>
+			<div class="col-12 ajustarCentro textoBlanco tamaño ajustarAbout">Web Developer-Graphic-artist User Experience Designer</div>
 			</section>
 		</section>
 <!--final de la primera seccion  -->
 
 <!--comienza la segunda seccion portfolio  -------------------------------------->
-    <section class="container">
+
+<section id="modalArea" class="row"> <!-- area de Modal inicio-->
+							<div class="col-12">
+									<img id="modalImage" class="modal-img"/>
+									<span id="close">X</span>
+							</div>
+</section> <!-- area de Modal fin-->
+
+
+
+
+	  <section class="container">
 			<section class="row">
-				<h2 class="col-12 ajustarCentro ajustarAbajo">PORTFOLIO</h2>
+				<h3 class="col-12 ajustarCentro ajustarAbajo">PORTFOLIO</h3>
 			</section>
-			<section class="row">
-				<h2 class="col-12 ajustarCentro ">linea con estrella</h2>
+			<section class="col-12">
+				<img src="assets/images/estrellaNegra.png" class="ajustarEstrella">
 			</section>
 			<section class="container espacioLado">
 				<div class="row">
-					<img src="assets/images/portfolio/cabin.png" class="col-4">
-					<img src="assets/images/portfolio/cake.png" class="col-4">
-					<img src="assets/images/portfolio/circus.png" class="col-4">
+					<img src="assets/images/portfolio/cabin.png" class="col-4 foto">
+					<img src="assets/images/portfolio/cake.png" class="col-4 foto">
+					<img src="assets/images/portfolio/circus.png" class="col-4 foto">
 				</div>
 				<div class="row">
-					<img src="assets/images/portfolio/game.png" class="col-4">
-					<img src="assets/images/portfolio/safe.png" class="col-4">
-					<img src="assets/images/portfolio/submarine.png" class="col-4">
+					<img src="assets/images/portfolio/game.png" class="col-4 foto" >
+					<img src="assets/images/portfolio/safe.png" class="col-4 foto">
+					<img src="assets/images/portfolio/submarine.png" class="col-4 foto">
 				</div>
 			</section >
     </section>
@@ -63,15 +77,16 @@
 <!--comienza la tercera seccion  about -------------------------------------------->
     <section class="container fondo ">
 			<article class="row">
-				<div class="col-12 ajustarCentro ajustarAbajo ">
+				<div class="col-12 ajustarCentro ajustarAbajo textoBlanco">
 					<h2>ABOUT</h2>
 				</div>
-			</article>
-			<section class="row">
 				<div class="col-12 ajustarCentro">
-					<p>linea con centro</p>
+					<img src="assets/images/estrellaBlanca.png" class="ajustarCentro">
 				</div>
-			</section>
+			</article>
+
+
+
 			<section class="row">
 				<article class="col-6 ">
 					<div class="alinearIzq">
@@ -94,7 +109,7 @@
 			</section>
 			<section class="row centrarBoton ">
 				<div class="col-12 ajustarAbout">
-					<button type="input" name="button" class="centrarBoton">Download Theme </button>
+					<button type="input" name="button" class="centrarBoton estiloBoton descarga"> <img src="assets/images/002-descargando-a-la-bandeja-de-entrada.png" alt="#">Download Theme </button>
 
 				</div>
 			</section>
@@ -103,12 +118,17 @@
 
 <!--comienza seccion cuarta contact me  ------------------------------------------>
    <section class="container">
+		 <div class="row">
+			 <div class="col-12">
+				 <h2 class="ajustarCentro">CONTACT ME</h2><br>
+				 <img src="assets/images/estrellaNegra.png" class="ajustarEstrella">
+			 </div>
+		 </div>
 		 <section class="row">
 			 <!--creando el formulario  -->
 			 <form class="col-4   ajustarFormulario ajustarAbajo bordeFormulario">
 				 <fieldset class="bordeFormulario">
-					 <legend class="ajustarCentro">CONTACT ME</legend>
-					 <h2 class="ajustarCentro">linea con estrella en centro</h2>
+
 
 				 <input type="text" id="nombre" size="50"placeholder="Name"class="borde bordeColor" />
 
@@ -117,9 +137,12 @@
 
          <input type="text" id="dni" size="50" maxlength="9" placeholder="Phone Number" class="borde bordeColor"/>
 
-         <textarea name="mensaje" rows="8" cols="46" placeholder="Message" class="bordeMesaje colorM"></textarea>
+         <textarea name="mensaje" rows="8" cols="52" placeholder="Message" class="bordeMesaje colorM"></textarea>
+				 <div class="col-12">
+				 	 <button type="submit" class="estiloBoton" >Send</button>
+				 </div>
 
-         <input class="btn" type="submit" value="Send" />
+
          </fieldset>
       </form>
 
@@ -132,24 +155,34 @@
 
 
 <!--comienza seccion logos -->
-   <section class="container">
+   <section class="container fondoContacto">
 		 <section class="row">
 			 <section class="col-4 ajustarCentro">
-				 <h3>LOCATION</h3> 	<br>
-				 <p >3481 Melrose Place <br>
+				 <h3 class="textBlanco">LOCATION</h3> 	<br>
+				 <p class="textBlanco">3481 Melrose Place <br>
 					 Beverly Hills, CA 90210
 				 </p>
 
 			 </section>
 
 			 <section class="col-4 ajustarCentro">
-				 <h3>AROUND THE WEB</h3>
-				 <section class="col-12">
-					<img src="assets/images/portfolio/logo-de-facebook.png" alt="">
-					<img src="assets/images/portfolio/facebook.png" alt="">
-					<img src="assets/images/portfolio/logo-de-facebook.png" alt="">
-					<img src="assets/images/portfolio/logo-de-facebook.png" alt="">
-					<img src="assets/images/portfolio/logo-de-facebook.png" alt="">
+				 <h3 class="textBlanco">AROUND THE WEB</h3>
+				 <section class="col-12 logoSeparar">
+					 <div class="col-1 ">
+						 <img src="assets/images/portfolio/logo-de-facebook.png" alt="#">
+					 </div>
+					 <div class="col-1">
+						 <img src="assets/images/008-google-plus.png" alt="#">
+					 </div>
+					 <div class="col-1">
+						 <img src="assets/images/011-twitter1.png" alt="#">
+					 </div>
+					 <div class="col-1">
+						 <img src="assets/images/005-dribbble-1.png" alt="#">
+					 </div>
+					 <div class="col-1">
+						 <img src="assets/images/004-linkedin-1.png" alt="#">
+					 </div>
 
 				 </section>
 
@@ -158,10 +191,10 @@
 			 </section>
 
 			 <section class="col-4 ajustarCentro">
-				 <h3>ABOUT FREELANCER</h3> 	<br>
-				 <p >Freelance is a free to use, open source <br>
-					 Bootstrap theme created by [Start] <br>
-					 [Bootstrap].
+				 <h3 class="textBlanco">ABOUT FREELANCER</h3> 	<br>
+				 <p class="textBlanco" >Freelance is a free to use, open source <br>
+					 Bootstrap theme created by <a href="#" class="textoColor linea ">Start <br> Bootstrap</a>
+					 .
 				 </p>
 
 			 </section>
@@ -176,12 +209,15 @@
 <!--fin seccion quinta footer-->
 
 
-	<section id="modalArea" class="row"> <!-- area de Modal inicio-->
-                <div class="col-12">
-                    <img id="modalImage" class="modal-img"/>
-                    <span id="close">&times;</span>
-                </div>
-</section> <!-- area de Modal fin-->
+
+
+
+
+<!--- area de footer----------------------------------------------->
+
+<footer class="col-12">
+	 <p> Copyright © Your Website 2016 </p>
+ </footer>
 
 	<!-- Enlaza aquí tu archivo JS -->
 	<script src="js/app.js" type="text/javascript"></script>

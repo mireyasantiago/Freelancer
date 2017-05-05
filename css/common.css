@@ -83,8 +83,13 @@
   margin-left: 38%;
   padding-top: 10%;
 }
+
+.ajustarEstrella{
+  margin-left: 38%;
+
+}
  .fondo{
-   background-color: #96ddc7;
+   background-color: #18BC9C;
  }
 
  .ajustarAbajo{
@@ -97,7 +102,7 @@
  }
 
  .ajustarAbout{
-   margin-bottom: 25%;
+   margin-bottom: 6%;
  }
  .borde{
    border-bottom: 0;
@@ -105,5 +110,5 @@
    border-right: 0;
  }
 .bordeColor{
-  border-top: solid 	#A9A9A9;
+  border-top: solid 	#eee;
 }
